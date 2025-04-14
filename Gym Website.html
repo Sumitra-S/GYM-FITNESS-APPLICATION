@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset  */
+        body {
+            font-family: 'Poltawski Nowy', serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url("gym img.jpg");
+
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid blue; */
+        }
+
+        .left img {
+            height: 100px;
+            width: 156px;
+            background-color: transparent; /* Removes any background */
+            filter: brightness(2) invert(1); /* Inverts the white color */
+            opacity: 1;
+
+
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 26px;
+            line-height: 19px;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 34px;
+            display: inline-block;
+            /* border: 2px solid orange; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 13px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(93, 90, 86);
+        }
+
+        .btn {
+            font-family: 'Poltawski Nowy', serif;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(68, 67, 67);
+        }
+
+        .container {
+            position: absolute;
+            right: 34px;
+            border: 2px solid rgb(245, 245, 243);
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 4px;
+        }
+
+        .form-group input {
+            font-family: 'Poltawski Nowy', serif;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 6px;
+            border: 1px solid;
+            margin: 11px auto;
+            font-size: 20px;
+            border-radius: 8px;
+
+        }
+
+        .form-group input:focus {
+            height: 35px;
+            background-color: rgb(163, 236, 132);
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+
+        @media (min-width : 900px) and (max-width : 1300px) {
+            .form-group input {
+                width: 300px;
+                margin: 5px auto;
+            }
+
+            .left img {
+                height: 75px;
+                width: 156px;
+            }
+
+        }
+
+        @media (min-width : 700px) and (max-width : 900px) {
+            .form-group input {
+                width: 200px;
+                padding: 6px;
+                margin: 7px auto;
+                font-size: 14px;
+            }
+
+            .btn {
+                margin: 0px 9px;
+                padding: 4px 12px;
+                font-size: 12px;
+                cursor: pointer;
+            }
+
+            .left img {
+                height: 50px;
+                width: 100px;
+            }
+
+            .left div {
+                font-size: 19px;
+            }
+
+            .navbar {
+                display: inline-block;
+            }
+        }
+
+        @media (min-width : 500px) and (max-width : 700px) {
+            .form-group input {
+                width: 200px;
+                padding: 6px;
+                margin: 7px auto;
+                font-size: 14px;
+            }
+
+            .btn {
+                margin: 0px 9px;
+                padding: 4px 12px;
+                font-size: 12px;
+                cursor: pointer;
+            }
+
+            .left img {
+                height: 50px;
+                width: 100px;
+            }
+
+            .left div {
+                font-size: 19px;
+            }
+
+            .navbar {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="LOGO1.jpeg" alt="">
+            <div>Gym Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contect Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the best gym of siliguri now</h1>
+        <from>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </from>
+    </div>
+</body>
+
+</html>
